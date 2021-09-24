@@ -4,7 +4,7 @@
 
     var historydata = [
                         ['bing', 'https://cn.bing.com/search?q='],
-                        ['google', 'https://www.google.com/#newwindow=1&safe=strict&q='],
+                        ['google', 'https://www.google.com/search?q='],
                         ['douban', 'https://www.douban.com/search?q='],
                         ['sinaweibo', 'http://s.weibo.com/weibo/'],
                         ['googleimage', 'https://google.com/search?q='],
@@ -101,7 +101,7 @@
     window.addEventListener('keydown', function() {
         var keyword = document.querySelector('#searchBox')
         if(event.code == 'Enter') {
-            window.open('https://cn.bing.com/search?q=' + keyword.value)
+            window.open('https://duckduckgo.com/?q=' + keyword.value, "_self")
         }
     })
 })()
